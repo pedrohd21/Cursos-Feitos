@@ -1,0 +1,28 @@
+body{
+    
+}
+#destaque{
+    padding-bottom: 50px;
+    color: red;
+}
+h1{
+    background-color: red;
+    margin-left: 0;
+    margin-top: 50px;
+    padding-left: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 25px;
+    width: 150px;
+    height: 500px;
+}
+h2{
+    border-color: yellow;
+    border-style: dotted;
+    border-width: 10px;
+    padding: 25px;
+}
+.teste{
+    color: blue;
+    padding-bottom: 50px;
+}
