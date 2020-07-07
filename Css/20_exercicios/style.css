@@ -1,0 +1,29 @@
+body{
+    width: 50%;
+    margin: auto;
+    font-family: sans-serif
+}
+h1{
+    background: orange;
+    text-align: center;
+    margin: 30px auto;
+    color: rgb(63, 55, 55);
+}
+h2{
+    background-color: rgb(255, 170, 170);
+    color: red;
+    border-color: red;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    font-weight: 900;
+    margin: left 20px;
+}
+strong{
+    color: blue;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    padding-left: 10px;
+}
