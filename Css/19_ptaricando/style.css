@@ -7,7 +7,7 @@ a:link{
 }
 a:hover{
     color: blue;
-    background-color: #ccc;}
+    background-color: rgb(0, 0, 0);}
 a:visited{
     color: red;
 }
