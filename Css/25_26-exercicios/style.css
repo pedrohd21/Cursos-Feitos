@@ -1,0 +1,72 @@
+body{
+    background: gray;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho{
+    margin: 0;
+    background-image: url(imagens/bg-3.jpg);
+    height: 500px;
+    background-position: right center;
+    background-size: cover;
+    color: white;
+}
+a{
+    color: white; 
+    text-decoration: none;
+}
+ul{
+    text-align: right;
+    margin: 0;
+    color: white;
+}
+li{
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    border: white 1px solid;
+}
+.conteudo{
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+.conteudo h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 2px #333;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+section{
+    background-color: white;
+}
+.cards{
+    border-bottom: solid 2px #ccc;
+    text-align: center;
+    background-color: #6b6c68;
+}
+.card-contention{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.cards:hover{
+    background-color: #979797;
+}
+.rodape{
+    height: 80px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background-color: #6b6c68;
+    line-height: 80px;
+}
+article{
+    padding: 10px;
+    text-align: left;
+    margin-top: 20px;
+}

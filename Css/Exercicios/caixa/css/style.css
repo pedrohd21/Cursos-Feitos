@@ -1,0 +1,31 @@
+html body{
+    height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+#container{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#cabecalho{
+    background-color: black;
+    color: white;
+}
+footer{
+    background: black;
+    color: white;
+}
+#content{
+    flex: 1;
+    display: flex;
+}
+main{
+    background: white;
+    flex: 1;
+}

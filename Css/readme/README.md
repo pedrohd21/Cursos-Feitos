@@ -132,3 +132,126 @@ background-attachment: scroll;
 
         * A palavra cover- chave redimensionará a imagem de plano de fundo para garantir que o elemento esteja totalmente coberto .
             ![](img2.png)
+
+# Aula 25 Estruturando Layouts com Semântica
+
+* header Define o cabeçalho de uma página da web ou seção.
+~~~ 
+<header>
+  <h1>HTML Reference</h1>
+  <nav>
+    <a>Home</a>
+    <a>About</a>
+    <a>Contact</a>
+  </nav>
+</header> 
+~~~
+* nav Define uma seção com links de navegação .
+~~~
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+~~~
+* main Define o conteúdo principal de uma página da web. Pode ser exibido com uma barra lateral.
+~~~
+<main>
+  <h1>My blog post</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+  <p>etc.</p>
+</main>
+
+<aside>
+  <h3>About the author</h3>
+  <p>Frontend Designer from Bordeaux, currently working for Improbable in sunny London.</p>
+</aside>
+~~~
+* footer Define o rodapé de uma página da web ou seção.
+~~~
+<footer>
+  HTML Reference - A free reference to all HTML5 elements and attributes
+</footer>
+~~~
+* Outras tags Semanticas
+* section Define uma seção dentro de uma página da web.
+~~~
+<section>
+  <h2>Section title</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+</section>
+~~~
+* article Define um bloco de conteúdo independente que pode existir em qualquer contexto.
+Pode ter seu próprio cabeçalho, rodapé, seções ... Útil para uma lista de postagens do blog.
+~~~
+<article>
+  <header>
+    <h3>
+      <a href="/my-blog-post">My blog post</a>
+    </h3>
+  </header>
+  <section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+  </section>
+  <footer>
+    <small>
+      Posted on <time datetime="2017-04-29T19:00">Apr 29</time> in <a href="/category/code">Code</a>
+    </small>
+  </footer>
+</article>
+~~~
+* aside Define um bloco de conteúdo relacionado ao conteúdo principal. Exibido como uma barra lateral normalmente.
+~~~
+<main>
+  <h1>My blog post</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+  <p>etc.</p>
+</main>
+
+<aside>
+  <h3>About the author</h3>
+  <p>Frontend Designer from Bordeaux, currently working for Improbable in sunny London.</p>
+</aside>
+~~~
+
+* Outras tags não Semanticas
+* div
+* span
+
+# 29 Propriedade display, inline, block e inline-block
+
+* display Define o comportamento de exibição do elemento.
+    * display: none;
+        * O elemento é completamente removido , como se não estivesse no código HTML em primeiro lugar.
+    * display: inline;
+
+        * O elemento é transformado em um elemento embutido : se comporta como texto simples.
+        ![](im1.png)
+
+    * display: block;
+
+        * O elemento é transformado em um elemento de bloco : começa em uma nova linha e ocupa toda a largura.
+        ![](im2.png)
+
+    * display: inline-block;
+        * O elemento compartilha propriedades de um elemento embutido e um bloco :
+
+        * inline porque o elemento se comporta como texto simples e se insere em um bloco de texto
+        Bloquear porque você pode aplicar heighte widthvalores
+        Por exemplo, este elemento possui:
+            ~~~
+            .elemento{
+            altura: 3em;
+            largura: 60px;
+            }
+            ~~~
+            ![](im3.png)
+
+# 31 box-sizing
+![](im4.png)
+![](im5.png)
+
+# 32 float
+![](im6.png)
+![](im7.png)
+![](im8.png)
