@@ -3,7 +3,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #container{
-    width: 75%;
+    width: 1024px;
     display: block;
     margin: auto;
 }
@@ -39,7 +39,7 @@ main{
 #fun, h3, p{
     display: block;
     padding: 0;
-    margin: 10px;
+    margin: 10px 0 10px 10px;
 }
 article{
     display: flex;
@@ -48,10 +48,9 @@ section{
     font-weight: bold;
     color: white;
     margin: auto;
-    background-image: url('/Css/37-projeto-fashion/img/bg_detalhe.png');
+    background-image: url('../img/bg_detalhe.png');
     background-size: cover;
     background-position: center right;
-
 }
 #h1final{
     text-align: left;
