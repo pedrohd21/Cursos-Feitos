@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: tahoma, arial, sans-serif;
 }
 #container{
     width: 1024px;
@@ -21,8 +21,12 @@ ul li{
 }
 li a{
     text-decoration: none;
-    color: #231252;
+    color: #6f8597;;
     font-weight: bold;
+    transition: color .5s linear;
+}
+li a:hover{
+    color: white;
 }
 #imgmenu{
     margin: 0 200px;
@@ -72,8 +76,10 @@ div iframe{
 footer{
     margin: 0;
     padding: 25px;
-    color: white;
     font-weight: bold;
-    background: #09031b;
     text-align: center;
+    font-size: 12px;
+    color: #6f8597;
+    letter-spacing: 5px;
+    background: #0b171f;
 }
