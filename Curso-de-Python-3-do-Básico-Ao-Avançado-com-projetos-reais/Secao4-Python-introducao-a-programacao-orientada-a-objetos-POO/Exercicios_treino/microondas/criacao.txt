@@ -1,0 +1,7 @@
+Microondas
+
+mostra o tempo determinado pelo usuario
+ligar e desligar
+tempo indeterminado + tecla de add + 30seg
+potencia 1 a 9
+Opções Almoço, descongelar, macarrão instantâneo, arroz, strogonoff
