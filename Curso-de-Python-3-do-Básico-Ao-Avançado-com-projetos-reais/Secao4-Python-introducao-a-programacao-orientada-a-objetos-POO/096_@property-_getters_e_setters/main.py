@@ -12,7 +12,7 @@ class Produto:
 
     @nome.setter
     def nome(self, valor):
-        self._nome = valor.title()
+        self._nome = valor.upper()
 
     # Getter
     @property

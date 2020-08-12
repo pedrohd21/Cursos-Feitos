@@ -23,7 +23,7 @@ class Pessoa:
         return rand
 
 
-p1 = Pessoa('Pedro', 1996)
+p1 = Pessoa('Pedro', 23)
 print(p1)
 print(p1.nome, p1.idade)
 p1.get_ano_nascimento()

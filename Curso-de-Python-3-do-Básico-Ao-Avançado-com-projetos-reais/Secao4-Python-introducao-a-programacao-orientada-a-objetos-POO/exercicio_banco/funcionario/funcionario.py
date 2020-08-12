@@ -5,13 +5,13 @@ class Funcionario:
         self.salario = salario
 
 
-class Gerente(Funcionario):
-
     def __init__(self, senha, qtd_funcionario):
         self.senha = senha
         self.qtd_funcionario = qtd_funcionario
 
     def autentica(self, senha):
         if self.senha == senha:
-            print('Acesso permitido')
+            print('Acesso
+class Gerente(Funcionario):
+ permitido')
             return True
