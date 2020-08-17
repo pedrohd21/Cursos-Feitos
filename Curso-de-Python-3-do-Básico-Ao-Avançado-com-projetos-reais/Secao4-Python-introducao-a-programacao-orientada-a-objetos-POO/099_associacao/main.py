@@ -1,5 +1,6 @@
 from classes import Escritor, Caneta, MaquinaDeEscrever
 
+
 escritor = Escritor('Joanzinho')
 caneta = Caneta('Bic')
 maquina = MaquinaDeEscrever()

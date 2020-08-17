@@ -9,7 +9,7 @@ class Cliente:
 
 
 class Conta:
-    def __init__(self, numero, titular, saldo, limite=1000):
+    def __init__(self, numero, titular, saldo=0, limite=1000):
         self.numero = numero
         self.titular = titular
         self.saldo = saldo
@@ -18,8 +18,12 @@ class Conta:
 
     def depositar(self, valor):
         self.saldo += valor
-        self.historico.transacoes.append(f'Deposito de: R$ {valor}')
-        return
+        if self.saldo > self.limite:
+            print(f'Acima do Limite permitido de R$ {self.limite}')
+            self.saldo -= valor
+        else:
+            self.historico.transacoes.append(f'Deposito de: R$ {valor}')
+            return
 
     def saca(self, valor):
         self.saldo -= valor

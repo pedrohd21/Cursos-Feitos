@@ -7,12 +7,12 @@ class Cliente:
     def insere_endereco(self, cidade, estado):
         self.enderecos.append(Endereco(cidade, estado))
 
-    def lista_endereco(self):
+    def lista(self):
         for endereco in self.enderecos:
             print(endereco.cidade, endereco.estado)
 
     def __del__(self):
-        print(f'{self.nome} FOI APAGDO')
+        print(f'{self.nome} FOI APAGADO')
 
 
 class Endereco:

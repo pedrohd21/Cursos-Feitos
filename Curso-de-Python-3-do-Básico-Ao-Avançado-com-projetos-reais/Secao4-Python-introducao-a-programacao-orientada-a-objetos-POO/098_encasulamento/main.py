@@ -29,6 +29,7 @@ class BaseDeDados:
 
 bd = BaseDeDados()
 bd.inserir_clientes(1, 'Pedro')
+bd.inserir_clientes(1, 'Pedro')
 bd.inserir_clientes(2, 'Pedro')
 bd.inserir_clientes(3, 'Pedro')
 print(bd.dados)
