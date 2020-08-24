@@ -1,7 +1,7 @@
 class LogMixin:
     @staticmethod
     def write(msg):
-        with open('log.log', 'a+') as f:
+        with open('log.txt', 'a+') as f:
             f.write(msg)
             f.write('\n')
 

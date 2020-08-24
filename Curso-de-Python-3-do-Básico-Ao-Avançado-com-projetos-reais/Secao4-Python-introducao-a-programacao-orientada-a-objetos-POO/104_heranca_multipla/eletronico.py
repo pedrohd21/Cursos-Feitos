@@ -5,7 +5,7 @@ class Eletronico:
 
     def ligar(self):
         if self._ligado:
-            return
+            return 
         self._ligado = True
 
     def desligar(self):

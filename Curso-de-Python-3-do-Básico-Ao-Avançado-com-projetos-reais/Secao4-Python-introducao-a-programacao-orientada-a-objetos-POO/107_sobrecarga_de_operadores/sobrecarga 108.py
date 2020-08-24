@@ -36,15 +36,15 @@ class Retangulo:
     def get_area(self):
         return self.x * self.y
 
-    def __repr__(self):
+    def __repr__(self):  # Retorna o triangulo, sem isso vai mostra so a classe
         return f"<class 'Retangulo({self.x}, {self.y})'>"
 
-    def __add__(self, other):
+    def __add__(self, other):  # Soma dois numeros ou mais
         novo_x = self.x + other.x
         novo_y = self.y + other.y
         return Retangulo(novo_x, novo_y)
 
-    def __lt__(self, other):
+    def __lt__(self, other):  # Menor ou  maior
         a1 = self.get_area()
         a2 = other.get_area()
 
@@ -53,7 +53,7 @@ class Retangulo:
         else:
             return False
 
-    def __gt__(self, other):
+    def __gt__(self, other):  # Igual a
         a1 = self.get_area()
         a2 = other.get_area()
 
@@ -72,4 +72,7 @@ class Retangulo:
 r1 = Retangulo(10, 20)
 r2 = Retangulo(10, 20)
 r3 = r1 + r2
-print(r1 == r3)
+print('Mostrando que é igual', r1 == r3)
+print('Somando', r1 + r3)
+print('Mostrando se o r1 é maior, retorna True ou False', r1 > r3)
+print('Mostrando se o r1 é menor, retorna True ou False', r1 < r3)

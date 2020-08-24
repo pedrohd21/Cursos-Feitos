@@ -24,7 +24,7 @@ class Conta:
     
     def saca(self, valor):
         if (self.saldo < valor):
-            print('Operão falhou')
+            print('Operação falhou')
         else:
             self.saldo -= valor
             self.historico.transacoes.append(f'Depósito de {valor}')
@@ -37,6 +37,7 @@ class Conta:
         retirou = self.saca(valor)
         if (retirou == False):
             return False
+            pass
         else:
             destino.depositar(valor)
             self.historico.transacoes.append(f'Transferencia de {valor} para conta {destino.numero}')

@@ -10,7 +10,7 @@ class A:
 
         return cls._jaexiste
 
-    def __call__(self, *args, **kwargs):
+    def __call__(self, *args, **kwargs):  # retorna como uuma função normal
         return f'Argumentos enviados: {args} {kwargs}'
 
     def __len__(self):
