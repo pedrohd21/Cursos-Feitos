@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1>Exemplo de formularios</H1>
+    <form action="#" method="POST" class="formLogin">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="">Email</label>
+            <input type="email" required> <br>
+
+            <label for="">numero de filhos</label>
+            <input type="number" min="0"> <br>
+
+            <label for="">Nascimento</label>
+            <input type="date" min="1980-01-01" max="2040-01-01"> <br>
+
+            <p>Sexo:</p>
+            <label> Masculino
+                <input type="radio" name="sexo" value="M">
+            </label>
+
+            <label> Feminino
+                <input type="radio" name="sexo" value="F">
+            </label> <br>
+
+            <label>Estado</label>
+            <select name="estado">
+                <option value="0">Selecione</option>
+                <option value="Sp"> São Paulo</option>
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="Mg"> Minas Gerais</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <label> Html
+                <input type="checkbox" name="html" value="html"> 
+            </label>
+
+            <label> Css
+                <input type="checkbox" name="css" value="css"> 
+            </label>
+
+            <label> JavaScript
+                <input type="checkbox" name="js" value="js"> 
+            </label>
+
+            <label> Python
+                <input type="checkbox" name="py" value="py"> 
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea style="resize: none;" name="msg" id="" cols="30" rows="5"></textarea>
+
+            <textarea style="resize: none;" name="contato" id="" cols="30" rows="5" readonly>Aqui entra o texto do contato que precisa ser aceito</textarea>
+            <label>
+                <input type="checkbox"> Li e aceito
+            </label>
+        </fieldset>
+        <input type="submit" value="mandar">
+    </form>
+</body>
+</html>
