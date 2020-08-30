@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from datetime import datetime
 
 
 class Cliente:
@@ -10,15 +11,25 @@ class Cliente:
     def nome(self):
         return self._nome
 
+    @nome.getter
+    def nome(self):
+        return self._nome
+
     @property
     def idade(self):
         return self._idade
 
+    @idade.getter
+    def idade(self):
+        return self._idade
 
-class Bank(ABC):
-    def __init__(self, saldo, limite=2000):
+
+class Bank(ABC, Cliente):
+    def __init__(self, nome, idade, saldo, numero, limite=0):
         self.saldo = saldo
+        self.numero = numero
         self._limite = limite
+        super().__init__(nome, idade)
 
     @property
     def limite(self):
@@ -30,10 +41,23 @@ class Bank(ABC):
 
     @abstractmethod
     def depositar(self, valor):
-        if not isinstance(valor, (int, float)):
-            raise ValueError('Valor do deposito precisa ser numerico.')
+        pass
 
     @abstractmethod
     def sacar(self, valor):
         pass
+
+    def detalhes(self):
+        print()
+        print('Detalhes da Conta')
+        print('-'*25)
+        print(f'Agencia: {self.numero}')
+        print(f'Conta Usuario: {self.nome}')
+        print(f'Saldo Atual: {self.saldo}')
+        data_abertura = datetime.today().strftime('Dia %d/%m/%Y Horas %H:%M')
+        print(f'Transação {data_abertura}')
+        print('-'*25)
+
+
+
 
