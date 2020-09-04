@@ -7,7 +7,7 @@ class CarrinhoDeCompra:
 
     def lista_produto(self):
         for produto in self.produto:
-            print(produto.nome, produto.valor)
+            print(f'{produto.nome} {produto.valor}')
 
     def soma_total(self):
         total = 0
@@ -20,4 +20,3 @@ class Produto:
     def __init__(self, nome, valor):
         self.nome = nome
         self.valor = valor
-
