@@ -7,8 +7,8 @@
  * Incremento = ++ pré ou pós ++
  * Decremento = -- pré ou pós --
 */
-let contador = 1;
-console.log('Contador1', contador++) //Add no final e por isso nn adiciona
+let contador = 2;
+console.log('Contador1', ++contador) //Add no final e por isso nn adiciona
 console.log('Contador1', contador)
 
 let contador1 = 1

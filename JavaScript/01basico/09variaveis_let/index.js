@@ -9,7 +9,7 @@ console.log('O filho de', nome, 'se chama Eduardo.');
 */
 
 let nome; // Declarou a variavel
-nome = 'PEsdro'; // Inicializando a variavel
+nome = 'Pedro'; // Inicializando a variavel
 console.log(nome);
 nome = 'Henrique'
 console.log(nome);
