@@ -3,6 +3,7 @@ import os
 way_search = input('Digite um caminho: ')
 term_search = input('Digite um termo: ')
 
+
 def format_counter(counter):
     base = 1024
     kilo = base
