@@ -1,16 +1,42 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+"""
+Comma Separated Values - CSV (Valores separados por vírgula)
+É um formato de dados muito usado em tabelas (Excel, Google Sheets), bases de
+dados, clientes de e-mail, etc...
+"""
+import csv
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+with open('clientes.csv', 'r') as file:
+    dice = [x for x in csv.DictReader(file)]
+    # # dice = csv.reader(file)
+    # for dices in dice:
+    #     print(dices['Nome'])
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+with open('cliente2.csv', 'w') as file:
+    write = csv.writer(
+        file,
+        delimiter=',',
+        quotechar='"',
+        quoting=csv.QUOTE_ALL
+    )
+    keys = dice[0].keys()
+    keys = list(keys)
+    write.writerow(
+        [
+            keys[0],
+            keys[1],
+            keys[2],
+            keys[3],
+        ]
+    )
+
+    for dices in dice:
+        write.writerow(
+            [
+                dices['Nome'],
+                dices['Sobrenome'],
+                dices['E-mail'],
+                dices['Telefone'],
+            ]
+        )
+
