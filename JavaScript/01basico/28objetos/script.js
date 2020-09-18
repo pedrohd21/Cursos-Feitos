@@ -6,18 +6,18 @@
 
 
 
-//function criaPessoa(nome, sobrenome, idade) {
+// function criaPessoa(nome, sobrenome, idade) {
 //    return {
 //        nome: nome, sobrenome: sobrenome, idade: idade
 //    };
-//}
-//const pessoal1 = criaPessoa('Pedro', 'henrique', 23);
-//const pessoal2 = criaPessoa('Maria', 'Lucia', 53);
-//const pessoal3 = criaPessoa('Joana', 'Paula', 68);
-//const pessoal4 = criaPessoa('Ana', 'Pati', 5);
-//const pessoal5 = criaPessoa('Julia', 'Abc', 13);
-//const pessoal6 = criaPessoa('Tati', 'Nati', 25);
-//console.log(pessoal1, pessoal2, pessoal3, pessoal4, pessoal5)
+// }
+// const pessoal1 = criaPessoa('Pedro', 'henrique', 23);
+// const pessoal2 = criaPessoa('Maria', 'Lucia', 53);
+// const pessoal3 = criaPessoa('Joana', 'Paula', 68);
+// const pessoal4 = criaPessoa('Ana', 'Pati', 5);
+// const pessoal5 = criaPessoa('Julia', 'Abc', 13);
+// const pessoal6 = criaPessoa('Tati', 'Nati', 25);
+// console.log(pessoal1.nome, pessoal2.nome, pessoal3.nome, pessoal4.nome, pessoal5.nome)
 
 
 const pessoal = {
