@@ -1,0 +1,4 @@
+instalando modulos 
+
+pip install requests  // instalando web scraping
+pip install beautifulsoup4 
