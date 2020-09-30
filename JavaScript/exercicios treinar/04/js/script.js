@@ -19,7 +19,7 @@ function meuEscopo() {
         console.log(nomes);
         resultado.innerHTML += `Nome Completo: ${nome.value} <br>`;
     }
-    form.addEventListener('submit', recebeEventoForm);
+    form.addEventListener('submit', recebeEventoForm)
 }
 
 meuEscopo();
