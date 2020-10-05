@@ -13,3 +13,5 @@ for question in html.select('.question-summary'):
     date = question.select_one('.relativetime')
     wishes = question.select_one('.vote-count-post ')
     print(date.text, title.text, wishes.text, sep='\t')
+
+

@@ -7,3 +7,4 @@ with open('index.html', 'r') as html:
     body_msg = template.safe_substitute(nome='Pedro Henrique', data=data_atual)
 
 print(body_msg)
+
