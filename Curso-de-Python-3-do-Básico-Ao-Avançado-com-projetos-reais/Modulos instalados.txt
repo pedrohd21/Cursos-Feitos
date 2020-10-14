@@ -1,7 +1,0 @@
-instalando modulos 
-
-pip install requests  // instalando web scraping
-pip install beautifulsoup4 
-
-
-pip install   // usa pra tudo
