@@ -14,7 +14,7 @@ body{
     font-family: 'Roboto';
     font-size: 1.3em;
     line-height: 1.5em;
-    color: rgba(8, 155, 223, 0.993);
+    color: white;
 }
 
 .container {
@@ -57,7 +57,11 @@ form button{
 form button:hover{
     background: black;
 }
-table, tr, caption{
-    width: 100%;
-    text-align: left;
+.paragrafo-resultado, .bad{
+    background: rgb(13, 110, 13);
+    padding: 10px 20px;
+}
+
+.bad{
+    background: rgb(179, 47, 47);
 }
