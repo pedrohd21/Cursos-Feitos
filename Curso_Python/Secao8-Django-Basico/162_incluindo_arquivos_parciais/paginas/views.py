@@ -7,3 +7,7 @@ def index(request):
 
 def sobre(request):
     return render(request, 'paginas/sobre.html')
+
+
+def blog(request):
+    return render(request, 'paginas/blog.html')
