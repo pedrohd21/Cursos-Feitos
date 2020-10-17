@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
 </head>
 <body>
-    
-    <!-- Navigation -->
-    {% include 'partial/_nav.html' %}
+    <div id="container">
+    <!-- header -->
+        {% include 'partial/_header.html' %}
 
-    {% block conteudo %}
+        {% block conteudo %}
 
-    {% endblock %}
+        {% endblock %}
+        {% include 'partial/_footer.html' %}
+    </div>
 </body>
 </html>
