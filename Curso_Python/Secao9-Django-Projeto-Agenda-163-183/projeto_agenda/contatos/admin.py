@@ -7,8 +7,8 @@ class ContatoAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'nome', 'sobrenome')
     list_filter = ('nome', 'sobrenome')
     list_per_page = 10
-    search_fields = ('nome', 'sobrenome', 'telefone', 'email', 'categoria')
+    search_fields = ('nome', 'sobrenome')
 
 
-admin.site.register(Categoria)
-admin.site.register(Contato, ContatoAdmin)
+admin.site.register(Categoria)              # SEMPRE FAZER ISSSOOOOO
+admin.site.register(Contato, ContatoAdmin)  # Registra os dados para nn parecer nomes aleatorios de Poo
