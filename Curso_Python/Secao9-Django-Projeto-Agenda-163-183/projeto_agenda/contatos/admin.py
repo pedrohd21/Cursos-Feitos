@@ -7,7 +7,7 @@ class ContatoAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'nome', 'sobrenome')
     list_filter = ('nome', 'sobrenome')
     list_per_page = 10
-    search_fields = ('nome', 'sobrenome')
+    # search_fields = ('nome', 'sobrenome')
 
 
 admin.site.register(Categoria)              # SEMPRE FAZER ISSSOOOOO
