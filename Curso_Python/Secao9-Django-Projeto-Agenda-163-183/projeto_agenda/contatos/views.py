@@ -1,12 +1,13 @@
-from django.shortcuts import render, get_object_or_404
-from django.http import Http404
+from django.shortcuts import render, get_object_or_404, redirect #import o error
+from django.http import Http404  # Importa o error
 from .models import Contato     # Importar as classes que ta no modelss
 from django.core.paginator import Paginator    ## Quando for fazer paginação importa o Paginator
-from django.db.models import Q, Value
-from django.db.models.functions import Concat
+from django.db.models import Q, Value           # importa o campo de pesquisa
+from django.db.models.functions import Concat    # importa o campo de pesquisa
+from django.contrib import messages             # importa a mensagem que aparece no navegador
 
 
-def index(request):   ## Aq coloca o filtro do id aula 172
+def index(request):   ## Aq coloca o filtro do id aula 172    
     contatos = Contato.objects.order_by('-id').filter(
         mostrar=True
     )
@@ -33,8 +34,11 @@ def busca(request):
     termo = request.GET.get('termo')
 
     if termo is None or not termo:
-        raise Http404()
-
+        messages.add_message(
+            request, messages.ERROR, 
+            'Campo busca não pode ficar vazio'
+        )
+        return redirect('index')
     campos = Concat('nome', Value(' '), 'sobrenome')
 
     contatos = Contato.objects.annotate(
