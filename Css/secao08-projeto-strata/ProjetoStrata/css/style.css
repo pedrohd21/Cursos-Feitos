@@ -1,3 +1,4 @@
+/* Pre formatação */
 body{
     font-family: 'Open Sans', arial, helvetica, sans-serif;
     color: #666;
@@ -84,6 +85,60 @@ ul, ol{
 li{
     padding-left: .5em;
 }
+input, label, textarea, select{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box; /* O border box serve para nn aparecer a rolagem em baixo da pagina */
+}
+input, textarea, select{
+    background: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    margin-bottom: 15px;
+}
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
+input:focus, textarea:focus{
+    border: 3px solid #49bf9d;
+    outline: none;
+}
+textarea{
+    height: 10em;
+}
+/* Fim pre formatação*/
+
+/*Cabeçalho*/
+.main-header{
+    position: fixed;
+    height: 7%;
+    width: 100%;
+    padding: 0.65em;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: right;
+    background: rgb(0, 0, 0);
+}
+
+.main-header-title{
+    font-size: 22px;
+    line-height: 1.5;
+    color: white;
+    font-weight: normal;
+    color: rgba(255, 255, 255, .5);
+}
+.main-header-title strong{
+    color: white;
+    font-weight: normal;
+}
+.main-header-link{
+    color: inherit;
+}
+.main-header-link:hover{
+    color: #49bf9d;
+}
+/*Fim cabeçalho*/
 
 .hidden{
     width: 0;
@@ -93,6 +148,7 @@ li{
     display: block;
 }
 
+/* Listas  */
 .ul-alternate{
     list-style-type: none;
     padding-left: 0; 
@@ -114,30 +170,9 @@ li{
     font-size: 2em;
     color: #49bf9d;
 }
+/*Fim lista*/
 
-input, label, textarea, select{
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-}
-input, textarea, select{
-    background: #ccc;
-    padding: 15px;
-    border-radius: 5px;
-    border: 3px solid transparent;
-    margin-bottom: 15px;
-}
-input[type="radio"], input[type="checkbox"]{
-    width: auto;
-}
-input:focus, textarea:focus{
-    border: 3px solid #49bf9d;
-    outline: none;
-}
-textarea{
-    height: 10em;
-}
-
+/* Botoes*/
 .button-default{
     background-color: #49bf9d;
     border: 3px solid #49bf9d;
@@ -157,7 +192,7 @@ textarea{
 .button-default-stroke{
     background-color: white;
     border-color: #efefef;
-    color: inherit;
+    color: inherit;  /* Herda a cor do elemento paiii */
 }
 .button-default-stroke:hover{
     color: #49bf9d;
@@ -175,11 +210,10 @@ textarea{
     display: block;
     text-align: center;
 }
+/* Fim Botoes*/
 
-.imagem-link{
-    border: 0;
-}
 
+/*Tabelas */
 .table{
     width: 100%;
     margin: 0 0 2em 0;
@@ -210,42 +244,11 @@ textarea{
 .table-alternate tbody td, .table-alternate tbody tr:first-child td, .table-alternate tbody tr:last-child td{
     border: 1px solid #ddd;
 }
+/*Fim Tabelas */
 
-.main-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 35%;
-    padding: 124px 54px 72px;
-    box-sizing: border-box;
-    background-image: url(../images/overlay.png), url(../images/bg.jpg);
-    background-position: left top;
-    background-size: auto, cover;
-    text-align: right;
-}
-
-.main-header-title{
-    font-size: 22px;
-    line-height: 1.5;
-    color: white;
-    font-weight: normal;
-    color: rgba(255, 255, 255, .5);
-}
-.main-header-title strong{
-    color: white;
-    font-weight: normal;
-}
-.main-header-link{
-    color: inherit;
-}
-.main-header-link:hover{
-    color: #49bf9d;
-}
-
+/*Corpo*/
 .main-content{
-    width: 65%;
-    margin-left: 35%;
+    margin: auto;
     padding: 124px 54px 72px;
     box-sizing: border-box;
 }
@@ -260,7 +263,9 @@ textarea{
     overflow: hidden;
 }
 
-
+.imagem-link{
+    border: 0;
+}
 .gallery-img img{
     width: 100%;
 }
@@ -269,7 +274,9 @@ textarea{
     display: inline-block;
     border-radius: 5px;
 }
+/*Fim Corpo*/
 
+/*Footer*/
 .main-footer{
     position: fixed;
     bottom: 0;
@@ -290,22 +297,8 @@ textarea{
   font-size: .75em;   
     border-bottom: none;
 }
-.copyright{
-    list-style: none;
-}
-.copyright li{
-    display: inline-block;
-    border-left: solid 1px rgba(255, 255, 255, 0.25);
-    padding: 0 0.75em;
-    line-height: 1;
-    font-size: .8em;
-}
-.copyright li:first-child {
-    border-left: 0;
-}
-.copyright li:last-child {
-    padding-right: 0;
-}
+/*Footer*/
+
 /* Grid */
 .row{
     overflow: auto;
@@ -339,5 +332,21 @@ textarea{
 .col-2-3 + .col-1-3, .col-1-3 + .col-2-3{
     margin-left: 2%;
 }
+/*Fim do grid*/
 
-
+.copyright{
+    list-style: none;
+}
+.copyright li{
+    display: inline-block;
+    border-left: solid 1px rgba(255, 255, 255, 0.25);
+    padding: 0 0.75em;
+    line-height: 1;
+    font-size: .8em;
+}
+.copyright li:first-child {
+    border-left: 0;
+}
+.copyright li:last-child {
+    padding-right: 0;
+}
