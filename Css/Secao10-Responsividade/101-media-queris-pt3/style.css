@@ -1,0 +1,26 @@
+html{
+    font-size: 32px;
+}
+body{
+    font: 16px sans-serif;
+}
+h1{
+    text-align: center;
+}
+div{
+    border: 1px solid black;
+    padding: 1em;
+    /* padding: 16px; */
+    width: 20em;
+    /* width: 320px; */
+    /* 320 / 16 == vai achar o valor em em*/
+    /* margin: 100px auto; */
+    /* 100 / 16 == 6.25 */
+    margin: 6.25em auto;
+    font-size: 16px;
+}
+p{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
