@@ -26,4 +26,4 @@ class C(A):
 b = B()
 c = C()
 b.fala('Um assunto')
-c.fala('outro assunto')
+c.fala('sdasd')

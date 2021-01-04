@@ -1,7 +1,8 @@
 """
 Dicionários
 """
-""" parte 1
+"""
+parte 1
 dicionario = {1: 'Valor 1', 2: 'Valor 2', 3: 'Valor3'}
 dicionario['str'] = 'valor'
 dicionario['1'] = 'Agora existe'
